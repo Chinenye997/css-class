@@ -1,0 +1,143 @@
+h1{
+    color: blue;
+    text-decoration: underline;
+}
+
+/*hover state of h1*/
+h1:hover{
+    color: brown;
+    text-decoration: none;
+}
+
+button{
+    outline: 0;
+    background-color: gold;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*hover state*/
+button:hover{
+    background-color: blue;
+    color: white;
+    /*scale: 1.05;*/
+}
+
+/*active state*/
+button:active{
+    transform: translateY(-14px); /*you use translateX(12px)*/
+    background-color: brown;
+    cursor: no-drop; /*You can also use pointer*/
+}
+
+input {
+    display: block; /*means move to the next line*/
+    margin: 1rem 0;
+    height: 1.5rem;
+    padding: 0 5px;
+    font-size: 14px; /*means increase or decrease the text size*/
+    outline: 0;
+    border: 2px solid black;
+    border-radius: 7px; /*give the conv to the angelan shape*/
+}
+
+input:focus{
+    border-color:blue; /*give a new border color to the input form*/
+}
+
+input::placeholder{
+    color: brown;
+}
+
+
+ul li:first-child{
+    color: red;
+
+}
+
+ul li:last-child{
+    color: cornflowerblue;
+    font-weight: 800;
+}
+
+.box p:first-child{
+    color: red;
+}
+
+.box p:last-child{
+    color: aqua;
+    font-weight: 900;
+}
+
+.box2 a:nth-child(4){
+    color: green;
+}
+
+.box2 p:nth-child(7){
+    color: brown;
+}
+
+ul li:nth-child(even){
+    color: yellow;
+}
+
+ul li:nth-child(odd){
+    color: purple;
+}
+
+.box3 {
+    border: 2px solid black;
+    padding: 32px 16px;
+    background-color: red;
+    background-image: url("../image/man\ on\ computer.jpg");
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.box3 p{
+    font-size: 40px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+/*pseudo element*/
+.box3 p::before{
+    content: "Beginning text";
+    color: white;
+    font-weight: 600;
+}
+
+.box3 p::after{
+    content: "End of sentence";
+    color: white;
+    font-weight: 600;
+}
+
+.box3 ::before{
+    content: "";
+    width: 280%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+p.sentence1::first-letter {
+    font-size: 70px;
+    font-weight: 900;
+    color: brown;
+}
+
+p.sentence2::first-line{
+    color: red;
+    text-decoration: underline;
+}
+
+input.input-text::placeholder{
+    color: green;
+}
