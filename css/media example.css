@@ -179,9 +179,9 @@ ul.mobile-dropdown li:nth-child(4) a {
 }
 
 
-/* ===================
-   FEATURES SECTION
-   =================== */
+/* ==============================
+   FEATURES SECTION USING A GRID
+   ==============================*/
 /* Features section container */
 .features {
     margin: 4rem 0; /* 64px top/bottom margin, no left/right margin */
@@ -256,7 +256,7 @@ ul.mobile-dropdown li:nth-child(4) a {
 }
 
 /* ========================================
-   PRICING SECTION
+   PRICING SECTION USING A FLEX
    ======================================== */
 
 /* Pricing section container */
