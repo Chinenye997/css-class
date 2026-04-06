@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+Content
+Padding
+Border
+Margin*/
+
+.box1{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 16px 40px 50px 70px;
+    margin: 16px 40px 30px 80px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    max-width: 10rem;
+    padding: 2rem 1rem;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    margin: 16px;
+    position: relative;
+}
+
+.box2 h2{
+    font: size 1.2rem ;
+}
+
+.box2 p{
+    font-size: 0.9rem;
+}
+
+.price {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.box2 a{
+    background-color: white;
+    text-decoration: none;
+    align-self: flex-start;
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+}
+
+.badge{
+    font-size: 0.6rem;
+    background-color: gold;
+    color: black;
+    width: fit-content;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.box3{
+    background-color: navy;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 16px 40px 50px 70px;
+    margin: 16px 40px 30px 80px;
+}
+
+.box3 span{
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.box3-first:nth-child(1){
+    border: 1px solid black;
+    margin: 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100%;
+    padding: 16px;
+}
+
+.container{
+    border: 1px solid black;
+    margin: 16px;
+    padding: 2rem 1rem;
+    display: flex;
+}
+
+.container div {
+    width: calc(100/2);
+    border: 1px solid black;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.box4{
+    border: 1px solid black;
+    margin: 2rem;
+    height: 300px;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box4 div {
+    background-color: navy;
+    color: white;
+    width:20%;
+    margin: 1rem 0;
+    border: 1px solid black;
+    padding: 3rem 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.box4{
+    margin: 1rem;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 2rem;
+}
+.box4{
+    background-color: brown;
+    margin: 1rem;
+    border: 1px solid black;
+    color: white;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+/*tablet*/
+@media(min-width: 768px){
+    .box4{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+}
+
+/*Mobile*/
+@media(min-width: 1024px){
+    .box4{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+}
+
+.header{
+    margin: 1rem;
+    border: 1px solid black;
+    display: grid;
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+}
+
+.header features-content {
+    background-color: brown;
+    margin: 1rem;
+    border: 1px solid black;
+    color: white;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.features-content {
+    width: 90%; 
+    max-width: 1280px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(3, auto); 
+    gap: 2rem; 
+}
+
+.features-content article {
+    background-color: navy; 
+    padding: 2rem 1rem; 
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+.features-content h2{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.features-content p{
+    font-size: 0.9rem;
+}
+
+/* Feature headings and paragraphs */
+.features-content h2,
+.features-content p {
+    color: #f6f6f6; 
+}
+
+.features-content a {
+    background-color: red; 
+    color: black; 
+    align-self: flex-start; 
+    padding: 0.5rem 2rem; 
+    border-radius: 10px; 
+}
+
+@media(min-width: 768px){
+    features-content{
+        grid-template-columns: repeat(1fr 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+@media(min-width: 1024px){
+    .features-content{
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
