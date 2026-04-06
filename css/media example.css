@@ -340,7 +340,8 @@ ul.mobile-dropdown li:nth-child(4) a {
 
 /* Hover effect on pricing cards */
 .pricing-content article:hover {
-    transform: rotate(2deg); /* Rotate card 2 degrees clockwise on hover */
+    transform: rotate(2deg); /* Rotate card 2 degrees clockwise on hover or you can use this 
+     transform: scale(1.05) this one behaver like hover when you hover on it ;*/
 }
 
 /* =================
